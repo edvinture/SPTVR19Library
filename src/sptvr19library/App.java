@@ -3,6 +3,7 @@ package sptvr19library;
 
 import entity.Reader;
 import entity.Book;
+import entity.User;
 import entity.History;
 import java.util.Calendar;
 import java.util.GregorianCalendar;

@@ -5,11 +5,13 @@
  */
 package entity;
 
+import java.io.Serializable;
+
 /**
  *
- * @author user
+ * @author sillamae kutsekool
  */
-public class Book {
+public class Book implements Serializable{
     private String name;
     private String author;
     private Integer publishedYear;
@@ -55,17 +57,8 @@ public class Book {
                 + ", publishedYear=" + publishedYear 
                 + '}';
     }
-
-    public void setIsbn(String nextLine) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     
 }
-    
-    
-    
-    
-    
     
 

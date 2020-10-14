@@ -13,7 +13,7 @@ import java.io.ObjectOutputStream;
  * @author user
  */
 public class HistorySaver {
-    private String fileName = "histories";
+    private final String fileName = "histories";
 
     public void saveHistories(History[] histories) {
         FileOutputStream fos = null;

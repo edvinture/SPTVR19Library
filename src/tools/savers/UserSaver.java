@@ -5,7 +5,8 @@
  */
 package tools.savers;
 
-import entity.Book;
+
+import entity.User;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,16 +18,16 @@ import java.io.ObjectOutputStream;
  *
  * @author user
  */
-public class BookSaver {
-    private final String fileName = "books";
+public class UserSaver {
+    private final String fileName = "users";
 
-    public void saveBooks(Book[] books) {
+    public void saveUsers(User[] users) {
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
         try {
             fos = new FileOutputStream(fileName);
             oos = new ObjectOutputStream(fos);
-            oos.writeObject(books);
+            oos.writeObject(users);
             oos.flush();
         } catch (FileNotFoundException ex) {
             System.out.println("Не найден файл");
@@ -35,13 +36,13 @@ public class BookSaver {
         }
     }
 
-    public Book[] loadFile() {
+    public User[] loadFile() {
         FileInputStream fis = null;
         ObjectInputStream ois = null;
         try {
             fis = new FileInputStream(fileName);
             ois = new ObjectInputStream(fis);
-            return (Book[]) ois.readObject();
+            return (User[]) ois.readObject();
         } catch (FileNotFoundException ex) {
             System.out.println("Не найден файл");
         } catch (IOException ex) {
@@ -49,7 +50,8 @@ public class BookSaver {
         } catch (ClassNotFoundException ex) {
             System.out.println("Ошибка: не найден класс");
         }
-        return new Book[100];
+        return new User[100];
     }
+
     
 }
