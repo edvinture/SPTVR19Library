@@ -8,10 +8,10 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 import tools.BookFactory;
-import tools.BookSaver;
-import tools.HistorySaver;
+import tools.savers.BookSaver;
+import tools.savers.HistorySaver;
 import tools.ReaderFactory;
-import tools.ReaderSaver;
+import tools.savers.ReaderSaver;
 
 /**
  *
