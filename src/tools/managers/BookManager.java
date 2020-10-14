@@ -23,6 +23,7 @@ public class BookManager {
         book.setAuthor(scanner.nextLine());
         System.out.println("год издания книги");
         book.netPublishedYear(scanner.nextInt());
+        return book;
         
         
     }

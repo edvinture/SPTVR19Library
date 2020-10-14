@@ -9,6 +9,6 @@ package tools.managers;
  *
  * @author user
  */
-public class ArrayManager {
+public class HistoryManager {
     
 }
